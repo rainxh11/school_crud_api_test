@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "2bd6c5a7-811d-4edb-b2ee-4df50c6dd4a1",
+		"name": "SCHOOL",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "13067298",
+		"_collection_link": "https://speeding-capsule-490442.postman.co/workspace/TEST~0015ff10-5385-4f45-83e8-e9aea6e4942b/collection/13067298-2bd6c5a7-811d-4edb-b2ee-4df50c6dd4a1?action=share&source=collection_link&creator=13067298"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ahmed\",\r\n    \"password\":\"ahmedahmed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "SIGNUP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"ahmed\",\r\n    \"password\":\"ahmedahmed\",\r\n    \"confirm_password\":\"ahmedahmed\",\r\n    \"role\":\"super_admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "GET ACCOUNTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/account"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE ACCOUNT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{http_endpoint}}/account/66882fb2e3b48d2b5dd00056"
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE SCHOOL",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"schhool name new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/school/66883ffc7b98a600d23b3bcb"
+			},
+			"response": []
+		},
+		{
+			"name": "POST SCHOOL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"schhool name\",\r\n        \"director_name\": \"ahmed\",\r\n        \"address\": \"los santos\",\r\n        \"phone_number\": \"+213660998894\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/school"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE School",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{http_endpoint}}/school/66883ffc7b98a600d23b3bcb"
+			},
+			"response": []
+		},
+		{
+			"name": "GET SCHOOLS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/school"
+			},
+			"response": []
+		},
+		{
+			"name": "GET CLASSROOM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/classroom"
+			},
+			"response": []
+		},
+		{
+			"name": "POST CLASSROOM",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"English class\",\r\n    \"teacher\":{\r\n        \"name\":\"ahmed\",\r\n        \"hired_at\":\"2024-07-05\",\r\n        \"birth_date\":\"2004-07-05\",\r\n        \"identification_number\":\"41564\",\r\n        \"phone_number\":\"+213660998894\",\r\n        \"qualifications\": [\"Masters Degree\",\"teaching license\"],\r\n        \"subject\":\"English\"\r\n    },\r\n    \"capacity\":40,\r\n    \"major_subject\":\"English\",\r\n    \"school\":\"668842b5501c82c0b45f06b9\",\r\n    \"school_year\":2024\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/classroom"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH CLASSROOM",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"English class 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/classroom/6688451e4e37548f21fcda76"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CLASSROOM",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{http_endpoint}}/classroom/6688451e4e37548f21fcda76"
+			},
+			"response": []
+		},
+		{
+			"name": "GET CLASSROOM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/classroom/6688451e4e37548f21fcda76"
+			},
+			"response": []
+		},
+		{
+			"name": "GET CLASSROOMS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/classroom"
+			},
+			"response": []
+		},
+		{
+			"name": "POST STUDENT",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\":\"ahmed chakhoum\",\r\n    \"birth_date\":\"1994-07-14\",\r\n    \"arabic_name\":\"أحمد شخوم\",\r\n    \"phone_number\":\"+213660998894\",\r\n    \"address\":\"Cite mkam\",\r\n    \"parents\":[\r\n        {\r\n            \"full_name\":\"rachid chakhoum\",\r\n            \"birth_date\":\"1970-05-04\",\r\n            \"arabic_name\":\"رشيد شخوم\",\r\n            \"phone_number\":\"+2130674878700\",\r\n            \"identification_number\":\"564564564\",\r\n            \"parenthood_type\":\"Father\",\r\n            \"address\":\"Cite Mhafir\"\r\n        }\r\n    ],\r\n    \"classes\": [\"6688451e4e37548f21fcda76\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/student"
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH STUDENT",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"full_name\":\"ahmed CHAKHOUM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{http_endpoint}}/student/668846f7ac3ee4bc23ef0a00"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE STUDENT",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{http_endpoint}}/student/6688467622ee30a51b596b8d"
+			},
+			"response": []
+		},
+		{
+			"name": "GET STUDENTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/student"
+			},
+			"response": []
+		},
+		{
+			"name": "GET STUDENT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{http_endpoint}}/student/668846f7ac3ee4bc23ef0a00"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MjAyMDUyOTYsIm5iZiI6MTcxODc2NTI5NiwiZXhwIjoxNzIxMDY5Mjk2LCJpc3MiOiJKV1RBdXRoIiwic3ViIjoiYWhtZWQiLCJhdWQiOiJsb2NhbGhvc3QiLCJqdGkiOiI1MTk1NTFiMS03YjBkLTQzYjEtYWRmYy01NGNhNzk0ZWVjZjIifQ.j3cxQJthVL8UsDuzMNr6yuvvun6isayyRmq1w0U1k3kDZvkLev6OW6qQUQzZGlmzARKxBzWptn5uL3V_1zV0wA.HTtiOSY71CkJjyGqnlgZLouSzAMJ4TUEBNQglWsKUPY%3D"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "http_endpoint",
+			"value": "https://madrasacloud.com/school_api_test",
+			"type": "string"
+		},
+		{
+			"key": "http_endpoint_local",
+			"value": "http://localhost:12000",
+			"type": "string",
+			"disabled": true
+		}
+	]
+}
